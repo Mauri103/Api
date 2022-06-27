@@ -7,8 +7,7 @@
     const PASS_DB = "";
     const NAME_DB = "prueba";
     const PORT_DB = "3306";
-
-
+    
     class Modelo {
         public $IpBaseDeDatos;
         public $NombreBaseDeDatos;

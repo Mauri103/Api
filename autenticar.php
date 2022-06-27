@@ -8,4 +8,4 @@
 
     echo $email . " " . $password;
 
-    UsuarioControlador::Eliminar($email, $password);
+    UsuarioControlador::Autenticar($email, $password);

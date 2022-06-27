@@ -12,9 +12,9 @@
         
     });
 
-    /*require_once $_SERVER['DOCUMENT_ROOT'] . "/nueva/config.php";
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/nueva/config.php";
     
-    if(!conexion){
-        session_start();
-    }*/
+    //if(!conexion){
+      //  session_start();
+    //*/
    

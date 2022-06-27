@@ -3,6 +3,7 @@
     require $_SERVER['DOCUMENT_ROOT'] ."/nueva/utils/autoload.php"; 
 
     class UsuarioControlador{
+        
         public static function Alta($email,$password){
             $u = new UsuarioModelo();
             $u -> Email = $email;
@@ -27,9 +28,13 @@
         
         }
 
-        public static function escribir($email,$password){
-        echo "bienvenido";
+        public static function ObtenerTodos(){
+            $u = new UsuarioModelo();
+            $u -> ObtenerTodos();
+        
         }
+
+        
 
 
 }

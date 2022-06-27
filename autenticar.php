@@ -9,3 +9,4 @@
     echo $email . " " . $password;
 
     UsuarioControlador::Autenticar($email, $password);
+    //UsuarioControlador::ObtenerTodos();

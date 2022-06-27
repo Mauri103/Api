@@ -4,7 +4,7 @@
 
 
     class UsuarioModelo extends Modelo{
-        public $Id;
+        
         public $Email;
         public $Password;
 
@@ -51,6 +51,27 @@
         public function Eliminar(){
             $sql = "DELETE FROM usuario WHERE email ='" . $this -> Email . "'";
             $this -> conexion -> query($sql);
+        }
+
+
+
+        public function ObtenerTodos(){
+            
+            $sql = "SELECT * FROM usuario";
+            $filas = $this -> conexion -> query($sql) -> fetch_all(MYSQLI_ASSOC);
+
+            $elementos = [];
+            foreach($filas as $fila){
+                $u = new UsuarioControlador();
+                $u -> Email = $fila['email'];
+                $u -> Password = $fila['password'];
+                array_push($elementos, $u);
+            }
+
+            echo('<pre>');
+            var_dump($elementos);
+            echo('</pre>');
+           
         }
 
     }

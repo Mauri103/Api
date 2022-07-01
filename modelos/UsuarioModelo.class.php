@@ -24,9 +24,6 @@
                 '" . password_hash($this -> Password,PASSWORD_DEFAULT) . "'
             )";
             $this -> conexion -> query($sql);
-
-            echo $sql;
-
             
         }
 
@@ -74,4 +71,5 @@
            
         }
 
+       
     }

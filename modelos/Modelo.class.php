@@ -23,16 +23,11 @@
                 $this -> NombreBaseDeDatos,
                 $this -> PuertoBaseDeDatos
             );
-            $this -> verificar();
+           
             
         }
 
-        public function verificar(){
-            if($this -> conexion) 
-                echo "Conectado a bdd";
-        }
-
-    
+            
         public function incializarDatosDeConexion(){
             $this -> IpBaseDeDatos = IP_DB;
             $this -> UsuarioBaseDeDatos = USER_DB;
